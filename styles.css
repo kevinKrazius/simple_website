@@ -22,3 +22,27 @@ section {
     border: 1px solid #ccc;
     padding: 10px;
 }
+
+h1 {
+    color: aqua;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Erstellt 3 Spalten */
+    grid-gap: 10px;
+    max-width: 1000px;
+    margin: 0 auto; /* Zentriert das Grid horizontal */
+    justify-content: center; /* Zentriert die Grid-Items im Grid-Container */
+}
+
+.grid-item {
+    padding: 20px;
+    text-align: center;
+    background-color: lightgrey;
+}
+
+.grid-item img {
+    width: 100%; /* Stellt sicher, dass das Bild die gesamte Breite des Grid-Items einnimmt */
+    height: auto; /* Behält das Seitenverhältnis des Bildes bei */
+}
